@@ -99,6 +99,7 @@ createUserButton.onclick = function() {
 
 function loadGamesFromServer () {
 
+
 var mainArea = document.getElementById('main-area');
             
 // when the page loads:
@@ -384,6 +385,9 @@ function createSession(email, password) {
 
 
 loadGamesFromServer();
+
+createGamesTable();
+createUsersTable();
 
 // when the page loads:
     // fetch resource collection
