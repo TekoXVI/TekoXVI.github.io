@@ -103,7 +103,7 @@ var mainArea = document.getElementById('main-area');
             
 // when the page loads:
     // fetch resource collection
-    fetch("http://s23-deploy-tekoxvi-production.up.railway.app/games", {
+    fetch("https://s23-deploy-tekoxvi-production.up.railway.app/games", {
         credentials: 'include'
     }).then(function (response) {
     	response.json().then(function (data) {
@@ -250,7 +250,7 @@ function createGameOnServer (gameName, gameConsole, maxPlayers, splitscreen, pri
     
     console.log("Sending data to server", data);
     
-    fetch("http://s23-deploy-tekoxvi-production.up.railway.app/games", {
+    fetch("https://s23-deploy-tekoxvi-production.up.railway.app/games", {
         // request details
         method: "POST",
         body: data,
@@ -271,7 +271,7 @@ function createGameOnServer (gameName, gameConsole, maxPlayers, splitscreen, pri
 };
 
 function deleteGameFromServer(gameId) {
-    fetch("http://s23-deploy-tekoxvi-production.up.railway.app/games/" + gameId, {
+    fetch("https://s23-deploy-tekoxvi-production.up.railway.app/games/" + gameId, {
         method: "DELETE",
         credentials: 'include'
     }).then(function (response) {
@@ -303,7 +303,7 @@ function editGameOnServer(gameId, gameName, gameConsole, maxPlayers, splitscreen
     
     console.log("Sending data to server", data);
     
-    fetch("http://s23-deploy-tekoxvi-production.up.railway.app/games/" + gameId, {
+    fetch("https://s23-deploy-tekoxvi-production.up.railway.app/games/" + gameId, {
         // request details
         method: "PUT",
         body: data,
@@ -333,7 +333,7 @@ function createUserOnServer (first_name, last_name, email, password) {
     
     console.log("Sending data to server", data);
     
-    fetch("http://localhost:8080/users", {
+    fetch("https://localhost:8080/users", {
         // request details
         method: "POST",
         body: data,
@@ -361,7 +361,7 @@ function createSession(email, password) {
     
     console.log("sending data to server:", data);
     
-    fetch("http://s23-deploy-tekoxvi-production.up.railway.app/sessions", {
+    fetch("https://s23-deploy-tekoxvi-production.up.railway.app/sessions", {
         // request details
         method: "POST",
         body: data,
