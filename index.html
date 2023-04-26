@@ -1,1 +1,40 @@
-Hello world
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	    <div class="container">
+    		<h1 id="my-heading">My Games</h1>
+    		<form id="login-form">
+        		<input type="text" id="email" placeholder="Enter your email">
+        		<input type="password" id="password" placeholder="Enter your password">
+        		<button id="login-button" type="button">Login</button>
+        		<button id="register-button" type="button">Register</button>
+    		</form>
+    		<form id="register-form" style="display: none;">
+    		    <input type="text" id="first-name" placeholder="First Name">
+    		    <input type="text" id="last-name" placeholder="Last Name">
+    		    <input type="text" id="email-new" placeholder="Email">
+        		<input type="password" id="password-new" placeholder="Password">
+        		<button id="create-user-button" type="button">Create User</button>
+    		</form>
+    		<div id="main-area" style="visibility: hidden;">
+        		<form id="new-game-form" style="display: flex;">
+            		<input type="text" id="game-name" placeholder="Game name">
+            		<input type="text" id="game-console" placeholder="Console">
+            		<input type="text" id="max-players" placeholder="Max players">
+            		<input type="text" id="splitscreen" placeholder="Splitscreen? (y/n)">
+            		<input type="text" id="price" placeholder="Price">
+            		<button id="add-game-button" type="button">Add Game</button>
+            	</form>
+            	<div id="selection"> 
+            		<button id="random-game-button" type="button">Choose Game</button>
+            	    <span id="random-game-name">  </span> 
+            	</div>
+            	<ul id="my-game-list"></ul>
+            </div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
