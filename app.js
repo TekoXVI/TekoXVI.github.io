@@ -384,10 +384,11 @@ function createSession(email, password) {
 };
 
 
-loadGamesFromServer();
-
 createGamesTable();
 createUsersTable();
+
+loadGamesFromServer();
+
 
 // when the page loads:
     // fetch resource collection
