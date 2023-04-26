@@ -334,7 +334,7 @@ function createUserOnServer (first_name, last_name, email, password) {
     
     console.log("Sending data to server", data);
     
-    fetch("https://localhost:8080/users", {
+    fetch("https://s23-deploy-tekoxvi-production.up.railway.app/users", {
         // request details
         method: "POST",
         body: data,
