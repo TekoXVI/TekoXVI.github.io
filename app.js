@@ -383,10 +383,6 @@ function createSession(email, password) {
     });
 };
 
-
-createGamesTable();
-createUsersTable();
-
 loadGamesFromServer();
 
 
